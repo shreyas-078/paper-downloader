@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VTU Paper Downloader</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="index.js" defer></script>
 </head>
 
@@ -16,9 +16,12 @@
     <main>
         <div class="paper-tools">
             <label for="subject-code">Enter Subject Code:</label>
-            <input type="text" placeholder="BMATS201" id="subject-code">
-            <label for="set">Enter Set:</label>
-            <input type="number" placeholder="2" id="set">
+            <input type="text" placeholder="BMATS201" id="subject-code" />
+            <p>Enter Set:</p>
+            <input type="checkbox" id="set-1" name="set-1" checked />
+            <label for="set-1">Set 1</label>
+            <input type="checkbox" id="set-2" name="set-2" />
+            <label for="set-2">Set 2</label>
         </div>
         <button class="download-paper">Download Paper</button>
         <p class="helper-text invisible">Paper Doesn't Exist/Not Found</p>

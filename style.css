@@ -1,7 +1,35 @@
-.invisible {
-    display: none;
+.header-heading {
+    margin-bottom: 0;
 }
 
-input {
-    text-transform: capitalize;
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper-tools {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#subject-code {
+    text-transform: uppercase;
+}
+
+.invisible {
+    display: none;
 }
