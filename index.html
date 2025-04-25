@@ -5,27 +5,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VTU Paper Downloader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <script src="index.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1 class="header-heading">Model Paper Downloader</h1>
-    </header>
-    <main>
-        <div class="paper-tools">
-            <label for="subject-code">Enter Subject Code:</label>
-            <input type="text" placeholder="BMATS201" id="subject-code" />
-            <p>Enter Set:</p>
-            <input type="checkbox" id="set-1" name="set-1" checked />
-            <label for="set-1">Set 1</label>
-            <input type="checkbox" id="set-2" name="set-2" />
-            <label for="set-2">Set 2</label>
-        </div>
-        <button class="download-paper">Download Paper</button>
-        <p class="helper-text invisible">Paper Doesn't Exist/Not Found</p>
-    </main>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            <h1 class="header-heading">VTU Paper Downloader</h1>
+            <p class="tagline">Download model papers with a single click</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="input-group">
+                    <label for="subject-code">Subject Code</label>
+                    <input type="text" placeholder="BMATS201" id="subject-code" />
+                    <span class="focus-border"></span>
+                </div>
+
+                <div class="sets-container">
+                    <p class="sets-label">Choose Sets:</p>
+                    <div class="toggle-options">
+                        <div class="toggle-option">
+                            <input type="checkbox" id="set-1" name="set-1" checked />
+                            <label for="set-1">Set 1</label>
+                        </div>
+                        <div class="toggle-option">
+                            <input type="checkbox" id="set-2" name="set-2" />
+                            <label for="set-2">Set 2</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="download-paper">
+                    <span class="button-text">Download Papers</span>
+                    <i class="fas fa-download"></i>
+                </button>
+
+                <div class="helper-text invisible">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Please enter a valid subject code</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 VTU Paper Downloader</p>
+        </footer>
+    </div>
 </body>
 
 </html>
